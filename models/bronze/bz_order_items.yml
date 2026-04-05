@@ -5,8 +5,7 @@ models:
     description: Table store value of items related to specific order
     columns:
       - name: ORDER_ITEM_ID
-        description: >
-          unique and not null order_item_id
+        description: unique and not null order_item_id
         tests:
           - unique
           - not_null
