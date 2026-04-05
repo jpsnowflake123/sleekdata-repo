@@ -2,8 +2,7 @@ version: 2
 
 models:
   - name: bz_order_items
-    description: >
-      Table store value of items related to specific order
+    description: Table store value of items related to specific order
     columns:
       - name: ORDER_ITEM_ID
         description: >
