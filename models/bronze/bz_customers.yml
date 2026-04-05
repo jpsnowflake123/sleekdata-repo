@@ -6,8 +6,7 @@ models:
       contract:
         enforced: true
         alias_types: true
-    description: >
-      customer bronze table with incremental append strategies   
+    description: customer bronze table with incremental append strategies   
     
     columns:
       - name: customer_id
