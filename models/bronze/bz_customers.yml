@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: bz_customers
+    config:
+      contract:
+        enforced: true
+        alias_types: true
+    description: >
+      customer bronze table with incremental append strategies   
+    
+    columns:
+      - name: customer_id
+        data_type: varchar
+        description: ""
+
+      - name: customer_name
+        data_type: varchar
+        description: ""
+
+      - name: hash_diff
+        data_type: varchar
+        description: ""
+
+      - name: load_timestamp
+        data_type: timestamp_ltz
+        description: ""

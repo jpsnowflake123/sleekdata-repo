@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: bz_order_items
+    description: >
+      Table store value of items related to specific order
+    columns:
+      - name: ORDER_ITEM_ID
+        description: >
+          unique and not null order_item_id
+        tests:
+          - unique
+          - not_null
+          
+      - name: SKU
+        description: >
+          products sku
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('bz_products')
+                field: SKU
+      - name: ORDER_ID
+        description: >
+          Order_id with not null values
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('bz_orders')
+                field: ORDER_ID
+                

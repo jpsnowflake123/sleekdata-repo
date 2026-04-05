@@ -1,0 +1,11 @@
+models:
+  - name: bz_stores
+    description: bronze stores
+    columns:
+      - name: STORE_ID
+        tests:
+          - unique
+          - not_null
+
+
+

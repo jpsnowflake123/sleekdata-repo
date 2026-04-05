@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: bz_supplies
+    description: "bronze supplies table"
+    data_tests:
+      - dbt_utils.expression_is_true:
+          arguments:
+            expression: "PERISHABLE IN ('TRUE','FALSE')" 
+    columns:
+      - name: SUPPLY_ID
+        tests:
+          - not_null
+      - name: PERISHABLE
+        tests:
+          - not_null
+    

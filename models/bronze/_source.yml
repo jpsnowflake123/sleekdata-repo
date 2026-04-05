@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: raw
+    database: dbsleekdata
+    schema: raw
+    description: raw source data
+    tables:
+      - name: customers
+        identifier: raw_customers
+      - name: items
+        identifier: raw_items
+      - name: orders
+        identifier: raw_orders
+      - name: products
+        identifier: raw_products
+      - name: stores
+        identifier: raw_stores
+      - name: supplies
+        identifier: raw_supplies
+

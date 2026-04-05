@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: bz_products
+    columns:
+      - name: SKU
+        tests:
+          - not_null
+          
